@@ -11,9 +11,9 @@ Housing prices in Australia:
 proposal 2:
 CryptoCurrnecy prices:
 - The dataset will consist of 6 years of daily historical prices (~ 1600 dates) from crypto and other assets from yahoo finance https://finance.yahoo.com/quote/ETH-USD/history?p=ETH-USD, elon musks tweets from kaggle (https://www.kaggle.com/ayhmrba/elon-musk-tweets-2010-2021?select=2021.csv until 202103. how do they get these? ) 
-- Target variable: I will rotate around a few cryptos like eth, dog, btc for the target, to see which has most predictive power, given the set of input features, and use
+- Target variable: I will rotate around a few cryptos like eth, dog, btc for the target, to see which has most predictive power, given the set of input features, and use that for the target. 
 - Features: I will be using similar data for different assets like other cryptos, gold futures, S&P and some other global stock market prices like nikkei -> about 20-30 feature variables. I will merge all these by date, and try to find predictive relations between them. 
- that for the target. 
+ 
 - Other features: Based on date, I will also try to add some other categorical variables like whether elon musks tweets about crypto that day positively or negativel, whether it is a weekend or not a weekend, day of week. 
 
 proposal 3:
