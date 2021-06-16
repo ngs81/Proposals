@@ -23,7 +23,7 @@ Data set consists of several columns of mobility data (mobility to groceries, ph
 - the size of the data can get quite big if we consider region+date as another datapoint. It is also very clean with almost no missing values.
 - the target variable we are predicting is covid case counts based on the weather and mobility for that region (for the days leading up to it). 
 - Features:  datatime variable, categorical variables (region which will give us some additional features like was the area under lockdown, developing country or not, etc), numerical variables (change in mobility from baseline, temperature, humidity)
-- Challenges: it would be nice to somehow include vaccine counts as that probably affects the covid case counts, especially in recent months.
+- Challenges: it would be nice to somehow include vaccine counts as that probably affects the covid case counts, especially in recent months. I also wanted to include covid tweet data as a natural language feature, but that has been harder to access.
 
 
 
