@@ -27,7 +27,7 @@ Data set consists of several columns of mobility data, region and datetime (mobi
 
 - Features:  1 datatime variable, 1 location var (region which will give us some additional categorical features like was the area under lockdown, developing country or not, etc), categorical variables, numerical variables (change in mobility from baseline, temperature, humidity)
 
-- Challenges: it would be nice to somehow include vaccine counts as that probably affects the covid case counts, especially in recent months. I also wanted to include covid tweet data as a natural language feature, but that has been harder to access. Another bigger issue is that the y vars (covid counts) arent independent across time. ie some auto correlation  in it. could use auto correlation as a feature maybe, and also take moving averages of the column vectors.  
+- Challenges: it would be nice to somehow include vaccine counts as that probably affects the covid case counts, especially in recent months. I also wanted to include covid tweet data as a natural language feature, but that has been harder to access. Another bigger issue is that the y vars (covid counts) arent independent across time. ie some auto correlation  in it. could use auto correlation as a feature maybe, and also take moving averages of the column vectors as it can take some time for the features to have their effect on the y variable.
 
 
 
