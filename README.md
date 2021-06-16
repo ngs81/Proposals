@@ -20,10 +20,14 @@ proposal 3: is it good from my learning perspective and also to give as a sample
 
 Studying the impact of weather and people's mobility on covid case counts.  
 Data set consists of several columns of mobility data, region and datetime (mobility to groceries, pharmacies, parks, transit, workplaces) from beginning of 2020 till date (https://www.google.com/covid19/mobility/) and covid case counts from other sources which will be merged using the datatime column. Weather data will be gotten from weather underground using its api (https://stackabuse.com/using-machine-learning-to-predict-the-weather-part-1)
+
 - the size of the data can get quite big if we consider region+date as another datapoint. It is also very clean with almost no missing values.
+
 - the target variable we are predicting is covid case counts based on the weather and mobility for that region (for the days leading up to it). Another interesting target variable is gas prices (since they seem to be fairly affected by covid, mobility etc.)
+
 - Features:  1 datatime variable, 1 location var (region which will give us some additional categorical features like was the area under lockdown, developing country or not, etc), categorical variables, numerical variables (change in mobility from baseline, temperature, humidity)
-- Challenges: it would be nice to somehow include vaccine counts as that probably affects the covid case counts, especially in recent months. I also wanted to include covid tweet data as a natural language feature, but that has been harder to access.
+
+- Challenges: it would be nice to somehow include vaccine counts as that probably affects the covid case counts, especially in recent months. I also wanted to include covid tweet data as a natural language feature, but that has been harder to access. Another bigger issue is that the y vars (covid counts) arent independent across time. ie some auto correlation  in it. could use auto correlation as a feature maybe, and also take moving averages of the column vectors.  
 
 
 
