@@ -19,7 +19,7 @@ CryptoCurrnecy prices:
 proposal 3:
 
 Studying the impact of weather and people's mobility on covid case counts.  
-Data set consists of several columns of mobility data (mobility to groceries, pharmacies, parks, transit, workplaces) from beginning of 2020 till date (https://www.google.com/covid19/mobility/) and covid case counts from other sources which will be merged using the datatime column. Weather data will be gotten from weather underground using its api (https://stackabuse.com/using-machine-learning-to-predict-the-weather-part-1)
+Data set consists of several columns of mobility data, region and datetime (mobility to groceries, pharmacies, parks, transit, workplaces) from beginning of 2020 till date (https://www.google.com/covid19/mobility/) and covid case counts from other sources which will be merged using the datatime column. Weather data will be gotten from weather underground using its api (https://stackabuse.com/using-machine-learning-to-predict-the-weather-part-1)
 - the size of the data can get quite big if we consider region+date as another datapoint. It is also very clean with almost no missing values.
 - the target variable we are predicting is covid case counts based on the weather and mobility for that region (for the days leading up to it). 
 - Features:  1 datatime variable, 1 location var (region which will give us some additional categorical features like was the area under lockdown, developing country or not, etc), categorical variables, numerical variables (change in mobility from baseline, temperature, humidity)
