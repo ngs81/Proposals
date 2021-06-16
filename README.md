@@ -16,7 +16,7 @@ CryptoCurrnecy prices:
  
 - Other features: Based on date, I will also try to add some other categorical variables like whether elon musks tweets about crypto that day positively or negativel, whether it is a weekend or not a weekend, day of week. 
 
-proposal 3:
+proposal 3: is it good from my learning perspective and also to give as a sample to potential employers? I would like to include some aspect of natural language processing in it though not sure yet.
 
 Studying the impact of weather and people's mobility on covid case counts.  
 Data set consists of several columns of mobility data, region and datetime (mobility to groceries, pharmacies, parks, transit, workplaces) from beginning of 2020 till date (https://www.google.com/covid19/mobility/) and covid case counts from other sources which will be merged using the datatime column. Weather data will be gotten from weather underground using its api (https://stackabuse.com/using-machine-learning-to-predict-the-weather-part-1)
