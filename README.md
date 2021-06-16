@@ -18,20 +18,11 @@ CryptoCurrnecy prices:
 
 proposal 3:
 
-Human activity recognition using smartphones data set, from UCI:
-https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#
-The target variable is one of 6 types of activity (walking, walking upstairs, walking downstairs etc), and there are about 500 feature variables are signals from the smartphone. 
-
-Quoting them:
-The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
-
-The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
-For each record they have provided: 
-- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-- Triaxial Angular velocity from the gyroscope. 
-- A 561-feature vector with time and frequency domain variables. 
-- Its activity label. 
-- An identifier of the subject who carried out the experiment.
+Studying the impact of weather and people's mobility on covid case counts.  
+Data set consists of several columns of mobility data (mobility to groceries, pharmacies, parks, transit, workplaces) from beginning of 2020 till date (https://www.google.com/covid19/mobility/) and covid case counts from other sources which will be merged using the datatime column. Weather data will be gotten from weather underground using its api.
+- the size of the data can get quite big if we consider region+date as another datapoint. It is also very clean with almost no missing values.
+- the target variable we are predicting is covid case counts based on the weather and mobility for that region (for the days leading up to it). 
+- Features:  datatime variable, categorical variables (region which will give us some additional features like was the area under lockdown, developing country or not, etc), numerical variables (change in mobility from baseline, temperature, humidity)
 
 
 
