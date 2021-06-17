@@ -16,18 +16,21 @@ CryptoCurrnecy prices:
  
 - Other features: Based on date, I will also try to add some other categorical variables like whether elon musks tweets about crypto that day positively or negativel, whether it is a weekend or not a weekend, day of week. 
 
-proposal 3: is it good from my learning perspective and also to give as a sample to potential employers? I would like to include some aspect of natural language processing in it though not sure yet.
+proposal 3: 
+is it good from my learning perspective and also to give as a sample to potential employers? I would like to include some aspect of natural language processing in it though not sure yet.
 
 Studying the impact of weather and people's mobility on covid case counts.  
 Data set consists of several columns of mobility data, region and datetime (mobility to groceries, pharmacies, parks, transit, workplaces) from beginning of 2020 till date (https://www.google.com/covid19/mobility/) and covid case counts from other sources which will be merged using the datatime column. Weather data will be gotten from weather underground using its api (https://stackabuse.com/using-machine-learning-to-predict-the-weather-part-1)
 
 - the size of the data can get quite big if we consider region+date as another datapoint. It is also very clean with almost no missing values.
 
-- the target variable we are predicting is covid case counts based on the weather and mobility for that region (for the days leading up to it). Another interesting target variable is gas prices (since they seem to be fairly affected by covid, mobility etc.)
+- the target variable we are predicting is covid case counts (shift y variable into the future, ie predicting covid counts tomorrow, or the change in rates (ie 'return') based on the weather and mobility for that region (for the days leading up to it). Another interesting target variable is gas prices (since they seem to be fairly affected by covid, mobility etc.)
 
-- Features:  1 datatime variable, 1 location var (region which will give us some additional categorical features like was the area under lockdown, developing country or not, etc), categorical variables, numerical variables (change in mobility from baseline, temperature, humidity)
+- Features:  1 datatime variable, 1 location var (region which will give us some additional categorical features like was the area under lockdown, developing country or not, etc), categorical variables, numerical variables (change in mobility from baseline, temperature, humidity). autocorrelation feature (maybe current covid count - arima sort of modeling. )
 
-- Challenges: it would be nice to somehow include vaccine counts as that probably affects the covid case counts, especially in recent months. I also wanted to include covid tweet data as a natural language feature, but that has been harder to access. Another bigger issue is that the y vars (covid counts) arent independent across time. ie some auto correlation  in it. could use auto correlation as a feature maybe, and also take moving averages of the column vectors as it can take some time for the features to have their effect on the y variable.
+- Challenges: it would be nice to somehow include vaccine counts as that probably affects the covid case counts, especially in recent months. I also wanted to include covid tweet data as a natural language feature, but that has been harder to access. Another bigger issue is that the y vars (covid counts) arent independent across time. ie some auto correlation  in it. could use auto correlation as a feature maybe, and also take moving averages of the column vectors as it can take some time for the features to have their effect on the y variable. gas prices as a feature or a target
+
+todo june 16: engineer a feature, engineer a target. train a model. measure accruacy. repeat. do one feature at a time. start with the shifted backward lookign feature of covid counts. have a model to predict some covid infection rate in one region. 
 
 
 
